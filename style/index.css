@@ -21,20 +21,20 @@ font: inherit;
 vertical-align: baseline;  
 }
 
-body{
-    background: #aafcb8;
+body {
+    background: #bbdd91;
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction:column;
 }
 
-.navTop{
+nav {
     display: flex;
     justify-content: flex-end;
     width: 98%;
 }
-a{
+a {
     margin: 1em 0.5em 0 0.5em;
     color:rgb(14, 43, 29);
     background: #77af9c;
@@ -44,174 +44,106 @@ a{
     height: 1.1em;
     border: 1px solid lightgray;
 }
-a:hover{
+a:hover {
         background: rgb(230, 117, 76);
     }
 
-.container{
+.container {
     display: flex;
     flex-direction:column;
     justify-content: center;
     /* align-content: center; */
     width: 98%;
     margin: 0 1%;
-    background: #d7fff1;
-    /* border: 1px solid grey;     */
+    background: #d4e9b9;   
+    
 }
 header {
     display: flex;
     justify-content: space-between;
-    background: url('../img/2people.jpg');
-    /* background-repeat: no-repeat; */
-    
-    height: 15em;
+    background: url('../img/2people.jpg');    
+    height: 17em;
     width: 100%;
     padding: 2em 0 0;
 }
-header h1{
+header h1 {
     font-size: 4em;  
     color:  rgb(230, 117, 76);
     text-shadow: 0.03em 0.03em #0a3039;
 }
+button {
+    width: 8em;
+    background: rgb(230, 117, 76);
+  }
 
-.main{
+.main {
     display: flex;
     flex-direction:column;
     align-items: center;
-    width: 100%;
-   
+    width: 100%; 
+    padding-bottom: 1.5em;  
 }
-h2{
+h2 {
     font-size: 2em;  
     color: #285943;
-    margin: 2em 0;
+    margin: 1.5em 0 1em 0;
 }
-.invest{
+.invest {
     display: flex;
     flex-direction:column;
     align-items: center;
     width: 100%;
 }
-.paths{
+.paths {
     display: flex;
     /* flex-direction: row; */
     justify-content: space-between;
     width: 100%;
-
 }
-.paths div{
+.paths div {
     width: 15em;
-    height: 15em;
+    height: 12em;
     background: url('../img/grow.jpg');
     background-size: contain;
     background-repeat: no-repeat;
-    /* margin: 0.5em; */
-    text-align: center;
-    color: #bf4e30;
+    border: 0.1em solid #285943;
+    text-align: center;    
+    color: #963b24;
     font-size: 1em;
-
 }
-
-/* 
-
-.mainFoto{
-    display: flex;
-    flex-direction:column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin: 1% 10% 1% 15%;
-    background: url('../images/backgr.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 90vh;
-    width: 70%;
-    text-align: center;
-    font-size: 6em;  
-    color: orangered;
-    text-shadow: indigo 1px 1px 2px;
-}
-.fotos{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 0% 0 11% ;
-}
-.item{
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-}  
-.fotos img  {
-    width: 50vh;
-    height: 50vh;
-    margin: 20px;
-}
-button{
-   width:100px;
-   background: orangered;
- }
-.niz{
-    display: flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items: center;
-    margin: 7vh;
-    background-color: #3CB371;
-}
-.niz h4{
-    font-size: 1em; 
-    text-align: center; 
-    color: orangered;
-    margin: 0.5vh;
-}
-niz a{
-    width:100px;
-    background: orangered; 
-}
- 
+            
 
 @media(max-width: 800px){
-    .mainFoto{        
-        height: 25vh;
-        font-size: 3em;  
-    }
-    button{
-        width:80px;    
-    }
-    .fotos{
-        margin: 0 0% 0 7% ;
-    }
-    .fotos img  {
-        width: 25vh;
-        height: 25vh;
-        margin: 10px;
-    }
-    .niz{
-        margin: 5vh;
+    .paths div {
+         margin: 0.5em;   
+    } 
+    .paths {
+        display: flex;   
+        flex-wrap: wrap;
+        justify-content: center;   
     }
 } /* close 800px */
 
-
-/* @media(max-width: 500px){
+@media(max-width: 500px){
     header{
-        justify-content:flex-end;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
     }
-    header h1 {
-        display: none;
-         } 
-    .links a {
-        width: 5em;
+    .registr {
+        display: flex;
+        flex-direction:column;
     }
-    .mainFoto{        
-        height: 25vh;
-        font-size: 2.5em;  
+    .registr a {
+        width: 6.9em;
     }
-    button{
-        width:80px;    
+    h2{        
+        margin: 0.7em 0 0.3em 0;
     }
-    .fotos{
-        flex-direction: column;
-        justify-content: center;
-    }
+  
+} /*close 500px */ 
 
-} close 500px */ */
+
+
+/* 
+
