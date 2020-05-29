@@ -1,0 +1,149 @@
+/* Add CSS styling here */
+
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;  
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+}
+
+body {
+    background: #bbdd91;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction:column;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 98%;
+}
+a {
+    margin: 1em 0.5em 0 0.5em;
+    color:rgb(14, 43, 29);
+    background: #77af9c;
+    text-align: center;
+    text-decoration: none;
+    width: 8em;
+    height: 1.1em;
+    border: 1px solid lightgray;
+}
+a:hover {
+        background: rgb(230, 117, 76);
+    }
+
+.container {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    /* align-content: center; */
+    width: 98%;
+    margin: 0 1%;
+    background: #d4e9b9;   
+    
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background: url('../img/2people.jpg');    
+    height: 17em;
+    width: 100%;
+    padding: 2em 0 0;
+}
+header h1 {
+    font-size: 4em;  
+    color:  rgb(230, 117, 76);
+    text-shadow: 0.03em 0.03em #0a3039;
+}
+button {
+    width: 8em;
+    background: rgb(230, 117, 76);
+  }
+
+.main {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 100%; 
+    padding-bottom: 1.5em;  
+}
+h2 {
+    font-size: 2em;  
+    color: #285943;
+    margin: 1.5em 0 1em 0;
+}
+.invest {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 100%;
+}
+.paths {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    width: 100%;
+}
+.paths div {
+    width: 15em;
+    height: 12em;
+    background: url('../img/grow.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 0.1em solid #285943;
+    text-align: center;    
+    color: #963b24;
+    font-size: 1em;
+}
+            
+
+@media(max-width: 800px){
+    .paths div {
+         margin: 0.5em;   
+    } 
+    .paths {
+        display: flex;   
+        flex-wrap: wrap;
+        justify-content: center;   
+    }
+} /* close 800px */
+
+@media(max-width: 500px){
+    header{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+    .registr {
+        display: flex;
+        flex-direction:column;
+    }
+    .registr a {
+        width: 6.9em;
+    }
+    h2{        
+        margin: 0.7em 0 0.3em 0;
+    }
+  
+} /*close 500px */ 
+
+
+
+/* 
+
